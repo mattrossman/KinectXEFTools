@@ -71,6 +71,7 @@ namespace XEFExtract
             string wavAudioPath = basePath + "_Audio.wav";
             string fulVideoPath = basePath + "_Video.avi";
             string skeletonPath = basePath + "_Skeleton.txt";
+            string floorPath = basePath + "_Floor.txt";
             string depthDatPath = basePath + "_Depth.dat";
 
             bool videoFlag = UseVideo;
@@ -103,6 +104,7 @@ namespace XEFExtract
                 if (skeletonFlag)
                 {
                     dataWriters.Add(new XEFBodyWriter(skeletonPath));
+                    dataWriters.Add(new XEFFloorWriter(floorPath));
                 }
 
                 if (depthFlag)

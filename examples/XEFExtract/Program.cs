@@ -50,7 +50,7 @@ namespace XEFExtract
         {
             Console.WriteLine("Usage:\txefextract [-v] [-s] [-d] [-resume] path/file");
             Console.WriteLine("\t-v : Output video file");
-            Console.WriteLine("\t-s : Output skeleton file");
+            Console.WriteLine("\t-s : Output skeleton and floor plane file");
             Console.WriteLine("\t-d : Output depth data");
             Console.WriteLine();
             Console.WriteLine("\t-resume : Resume extraction (skips existing files)");
